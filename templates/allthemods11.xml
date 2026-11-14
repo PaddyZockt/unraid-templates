@@ -8,10 +8,10 @@
   <Privileged>false</Privileged>
   <Icon>https://media.forgecdn.net/avatars/thumbnails/1757/481/256/256/639118126616359223.png</Icon>
   <Overview>All the Mods 11 Minecraft server (Minecraft 26.1.2, NeoForge, Java 25). On first start the container downloads the newest official server pack from CurseForge and installs it. A new image is built automatically whenever a new server pack is released. Requires a free CurseForge API key (console.curseforge.com) and acceptance of the Minecraft EULA. Plan for at least 8 GB RAM and about 10 GB disk space.</Overview>
-  <Support>https://github.com/PaddyGameTV/docker-allthemods11/issues</Support>
-  <Project>https://github.com/PaddyGameTV/docker-allthemods11</Project>
-  <TemplateURL>https://raw.githubusercontent.com/PaddyGameTV/unraid-templates/main/templates/allthemods11.xml</TemplateURL>
-  <ReadMe>https://raw.githubusercontent.com/PaddyGameTV/docker-allthemods11/main/README.md</ReadMe>
+  <Support>https://github.com/PaddyZockt/docker-allthemods11/issues</Support>
+  <Project>https://github.com/PaddyZockt/docker-allthemods11</Project>
+  <TemplateURL>https://raw.githubusercontent.com/PaddyZockt/unraid-templates/main/templates/allthemods11.xml</TemplateURL>
+  <ReadMe>https://raw.githubusercontent.com/PaddyZockt/docker-allthemods11/main/README.md</ReadMe>
   <Category>GameServers:</Category>
   <ExtraSearchTerms>ATM11 all the mods 11 atm11 minecraft modpack neoforge curseforge</ExtraSearchTerms>
   <Requires>CurseForge API key (free, console.curseforge.com), Minecraft EULA accepted, about 8 GB RAM</Requires>
