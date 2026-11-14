@@ -1,0 +1,7 @@
+<CommunityApplications>
+  <Profile>
+    Unraid templates for ready-to-run Minecraft modpack servers by PaddyGameTV: **All the Mods 10** and **All the Mods 11**. Each container downloads the newest official server pack from CurseForge on first start, and a new image is built automatically for every new server pack version. A free CurseForge API key is required. Support: open an issue in the matching GitHub repository (docker-allthemods10 / docker-allthemods11).
+  </Profile>
+  <Icon>https://raw.githubusercontent.com/PaddyGameTV/unraid-templates/main/icon.svg</Icon>
+  <WebPage>https://github.com/PaddyGameTV/unraid-templates</WebPage>
+</CommunityApplications>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>AllTheMods11-Server</Name>
+  <Repository>paddygametv/docker-allthemods11:latest</Repository>
+  <Registry>https://hub.docker.com/r/paddygametv/docker-allthemods11</Registry>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Icon>https://media.forgecdn.net/avatars/thumbnails/1757/481/256/256/639118126616359223.png</Icon>
+  <Overview>All the Mods 11 Minecraft server (Minecraft 26.1.2, NeoForge, Java 25). On first start the container downloads the newest official server pack from CurseForge and installs it. A new image is built automatically whenever a new server pack is released. Requires a free CurseForge API key (console.curseforge.com) and acceptance of the Minecraft EULA. Plan for at least 8 GB RAM and about 10 GB disk space.</Overview>
+  <Support>https://github.com/PaddyGameTV/docker-allthemods11/issues</Support>
+  <Project>https://github.com/PaddyGameTV/docker-allthemods11</Project>
+  <TemplateURL>https://raw.githubusercontent.com/PaddyGameTV/unraid-templates/main/templates/allthemods11.xml</TemplateURL>
+  <ReadMe>https://raw.githubusercontent.com/PaddyGameTV/docker-allthemods11/main/README.md</ReadMe>
+  <Category>GameServers:</Category>
+  <ExtraSearchTerms>ATM11 all the mods 11 atm11 minecraft modpack neoforge curseforge</ExtraSearchTerms>
+  <Requires>CurseForge API key (free, console.curseforge.com), Minecraft EULA accepted, about 8 GB RAM</Requires>
+  <Date>2026-11-14</Date>
+  <MinVer>6.1</MinVer>
+  <Beta>true</Beta>
+  <Config Name="Minecraft Port" Target="25565" Default="25565" Mode="tcp" Description="Minecraft server port (TCP)." Type="Port" Display="always" Required="true" Mask="false">25565</Config>
+  <Config Name="Server Data" Target="/data" Default="/mnt/user/appdata/allthemods11" Mode="rw" Description="Persistent server files (world, mods, configs)." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/allthemods11</Config>
+  <Config Name="CurseForge API Key" Target="CURSEFORGE_API_KEY" Default="" Description="Free API key from console.curseforge.com. Needed to download the server pack." Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Accept EULA" Target="EULA" Default="false" Description="Set to true to accept the Minecraft EULA (https://aka.ms/MinecraftEULA)." Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+  <Config Name="JVM Options" Target="JVM_OPTS" Default="-Xms2500m -Xmx8192m" Description="Java memory options. Increase -Xmx for more players." Type="Variable" Display="always" Required="false" Mask="false">-Xms2500m -Xmx8192m</Config>
+  <Config Name="MOTD" Target="MOTD" Default="All the Mods 11 Server Powered by Docker" Description="Server message shown in the Minecraft server list." Type="Variable" Display="always" Required="false" Mask="false">All the Mods 11 Server Powered by Docker</Config>
+  <Config Name="Max Players" Target="MAX_PLAYERS" Default="5" Description="Maximum number of players." Type="Variable" Display="always" Required="false" Mask="false">5</Config>
+  <Config Name="Online Mode" Target="ONLINE_MODE" Default="true" Description="true = only players with a valid Minecraft account can join." Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="Allow Flight" Target="ALLOW_FLIGHT" Default="true" Description="true or false." Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="Enable Whitelist" Target="ENABLE_WHITELIST" Default="false" Description="true = only whitelisted players can join." Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="Whitelist Users" Target="WHITELIST_USERS" Default="" Description="Comma-separated Minecraft names to whitelist." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Operators" Target="OP_USERS" Default="" Description="Comma-separated Minecraft names to make server operators." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
