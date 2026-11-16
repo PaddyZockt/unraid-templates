@@ -1,0 +1,35 @@
+name: "Bug report / Fehler melden"
+description: "Something does not work as expected / Etwas funktioniert nicht wie erwartet"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Please do not post passwords, tokens or API keys. Issues are public.**
+        **Bitte keine Passwörter, Tokens oder API-Schlüssel posten. Issues sind öffentlich.**
+  - type: input
+    id: template
+    attributes:
+      label: "Which template? / Welches Template?"
+      placeholder: "All the Mods 10 / All the Mods 11"
+    validations:
+      required: true
+  - type: input
+    id: unraid
+    attributes:
+      label: "Unraid version / Unraid-Version"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: "What happened? / Was ist passiert?"
+      description: "What did you expect, what happened instead? / Was hast du erwartet, was ist stattdessen passiert?"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Log or screenshot text / Log oder Text aus dem Screenshot"
+      description: "Remove secrets first. / Vorher Geheimnisse entfernen."
+      render: text
